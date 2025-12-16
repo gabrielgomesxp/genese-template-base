@@ -3,15 +3,15 @@
 /* 1. VARIÁVEIS GLOBAIS (O Painel edita aqui) */
 :root {
     --primary-color: #2271b1;
-    --body-bg: #ffffff;  
+    --body-bg: #ffffff;       
     --text-color: #333333;
     --heading-color: #111111;
 }
 
-/* 2. ESTRUTURA BASE */
+/* 2. ESTRUTURA BASE (Usa as variáveis) */
 body {
     background-color: var(--body-bg); 
-    color: var(--text-color); 
+    color: var(--text-color);         
     font-family: 'Helvetica', sans-serif;
     line-height: 1.6;
     max-width: 800px;
