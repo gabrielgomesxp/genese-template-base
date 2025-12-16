@@ -1,0 +1,47 @@
+# _config.yml - Configurações do Genese CMS
+# Documentação Oficial: https://jekyllrb.com/docs/configuration/
+
+# --- 1. Identidade (Editável pelo Painel) ---
+title: "Meu Novo Site"
+email: "contato@exemplo.com"
+description: "Um site rápido e seguro criado com Genese CMS."
+
+# --- 2. Configurações Técnicas ---
+baseurl: "/site-teste-delay"
+url: "https://gabrielgomesxp.github.io"
+markdown: kramdown
+permalink: /:categories/:title/ # Define que a URL será site.com/categoria/titulo
+
+# --- 3. Pastas Padrão (Onde o Jekyll busca coisas) ---
+# O Jekyll busca automaticamente em:
+# - _posts
+# - _layouts
+# - _includes
+# - assets (copiado como está)
+
+# --- 4. Regras Padrão (Defaults) ---
+# Aqui definimos regras automáticas para evitar repetição
+defaults:
+  - scope:
+      path: ""          # Aplica a todos os arquivos da raiz
+      type: "posts"     # Especificamente para arquivos dentro de _posts
+    values:
+      layout: "post"    # Todo post usa automaticamente o layout 'post.html'
+      author: "Admin"   # Autor padrão se não for informado
+      comments: true    # Comentários ativados por padrão
+
+# --- 5. Plugins Ativos ---
+plugins:
+  - jekyll-seo-tag    # Melhora o SEO do Google
+  - jekyll-feed       # Cria o RSS Feed
+  - jekyll-sitemap    # Cria o sitemap.xml
+
+# --- 6. Exclusões (O que NÃO vai para o site final) ---
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - README.md
+  - LICENSE
+  - admin/            # O Painel Admin não precisa ser processado pelo Jekyll
