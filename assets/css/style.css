@@ -3,15 +3,15 @@
 /* 1. VARIÁVEIS GLOBAIS (O Painel edita aqui) */
 :root {
     --primary-color: #2271b1;
-    --body-bg: #ffffff;       /* Voltei para branco para não doer os olhos */
+    --body-bg: #ffffff;  
     --text-color: #333333;
     --heading-color: #111111;
 }
 
-/* 2. ESTRUTURA BASE (Usa as variáveis) */
+/* 2. ESTRUTURA BASE */
 body {
-    background-color: var(--body-bg); /* OBRIGATÓRIO para o admin funcionar */
-    color: var(--text-color);         /* OBRIGATÓRIO para o admin funcionar */
+    background-color: var(--body-bg); 
+    color: var(--text-color); 
     font-family: 'Helvetica', sans-serif;
     line-height: 1.6;
     max-width: 800px;
@@ -99,3 +99,4 @@ img {
     line-height: 1.1;
     margin-bottom: 20px;
 }
+
